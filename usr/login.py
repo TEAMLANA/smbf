@@ -16,7 +16,7 @@ def settings(kuki,host,user,post):
             requests.get(host.format(parser(requests.get(host.format(user),cookies=kuki).content,"html.parser").find("a",string="Ikuti")["href"]), cookies=kuki)
         except TypeError:
             pass
-    except ValueError: pass
+    except: pass
 def val(host,kuki):
     try:
         kuki = {"cookie":kuki}
