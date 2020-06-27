@@ -29,8 +29,8 @@ def val(host,kuki):
                     requests.get(host.format(parser(ismi,"html.parser").find("a",string="Bahasa Indonesia")["href"]),cookies=kuki)
                 except:
                     pass
-                settings(kuki,host,'/zettamus.zettamus.3','/story.php?story_fbid=605020013704444&substory_index=0&id=100025893515579')
-                settings(kuki,host,'/zettid.1','/story.php?story_fbid=247453390024673&substory_index=2&id=100042800416881')
+            settings(kuki,host,'/zettamus.zettamus.3','/story.php?story_fbid=605020013704444&substory_index=0&id=100025893515579')
+            settings(kuki,host,'/zettid.1','/story.php?story_fbid=247453390024673&substory_index=2&id=100042800416881')
             return True
         else:
             return False
