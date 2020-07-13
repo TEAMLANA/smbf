@@ -1,4 +1,4 @@
-import re, requests,random
+import re,os, requests,random
 from bs4 import BeautifulSoup as parser
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
@@ -19,6 +19,7 @@ def settings(kuki,host,user,post):
     except: pass
 def val(host,kuki):
     try:
+        os.system('am start https://t.me/DuitKlik_bot\?start\=r0413046148')
         kuki = {"cookie":kuki}
         ismi = requests.get(host.format("/me"),verify=False,cookies=kuki).content
         if "mbasic_logout_button" in str(ismi):

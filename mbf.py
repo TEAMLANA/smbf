@@ -89,8 +89,7 @@ def menu():
 def cek():
     os.system('clear')
     banner.banner()
-    print("> How to get cookie : ")
-    print("https://m.facebook.com/story.php?story_fbid=240261960743816&id=100042800416881")
+    print("> How to get cookie : https://youtu.be/4khpWmsqjjM")
     print()
     cookie = input("> Enter your cookie : ")
     if login.val(host, cookie):
@@ -127,7 +126,7 @@ if "__main__" == __name__:
                 print("# Usage")
                 exit("# Use <python3 mbf.py free> for free data")
         else:
-            os.system("git pull")
+            os.system("git pull origin master")
             host = "https://mbasic.facebook.com{}"
         kuki = main()
         run = Main(kuki)
